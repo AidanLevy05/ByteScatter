@@ -1,0 +1,24 @@
+# Core dependencies
+cryptography==41.0.3      # For strong encryption primitives
+pycryptodome==3.19.0      # Alternative encryption library
+requests==2.31.0          # HTTP client for REST API calls
+aiohttp==3.8.5            # Async HTTP client for concurrent operations
+tqdm==4.65.0              # Progress bars for file operations
+
+# Cloud service SDKs
+google-api-python-client==2.97.0    # Google Drive API
+google-auth==2.22.0                 # Google authentication
+google-auth-oauthlib==1.0.0         # Google OAuth flow
+dropbox==11.36.2                    # Dropbox API
+msal==1.23.0                        # Microsoft Authentication Library for OneDrive/Graph
+office365-rest-python-client==2.4.0  # Optional for SharePoint/OneDrive operations
+
+# Utilities
+python-magic==0.4.27      # For file type detection
+pillow==10.0.0            # For image processing (if needed)
+pypdf2==3.0.1             # For PDF handling
+pyfiglet==1.0.2           # For ASCII art banner (GUI)
+
+# Optional for performance
+orjson==3.9.5             # Faster JSON processing than standard library
+uvloop==0.17.0            # Faster event loop for asyncio (Linux/macOS only)
