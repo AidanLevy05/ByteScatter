@@ -64,7 +64,7 @@ The code example below shows this key derivation process:
 ```python
 def derive_master_key(self, password, salt=None, use_argon2=True):
     if salt is None:
-        salt = os.urandom(16)  # Generate 128-bit salt
+        salt = os.urandom(16)
     
     if use_argon2 and ARGON2_AVAILABLE:
         # Use argon2.low_level API for stronger password hashing
@@ -189,9 +189,7 @@ Solution: Implemented proper transaction handling and connection pooling
 Metadata-Segment Mismatch: A critical bug in OLDMAIN.py allowed segments to be uploaded without properly recording their locations:
 \
 ```python
-# Problematic code from OLDMAIN.py that failed to update database
 if upload_result["success"]:
-    # Missing database update for cloud location
     print(f"✅ Uploaded encrypted segment: {segment_path} -> {upload_result['remote_path']}")
 ```
 Solution: Added proper database transaction handling to ensure metadata consistency
