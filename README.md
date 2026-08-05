@@ -4,7 +4,7 @@ ByteScatter: Secure File Obfuscation and Distribution System
 ---
 # Executive Summary
 
-ByteScatter is an advanced file security solution that enhances data protection through a combination of strong encryption and multi-cloud distribution. By splitting files into encrypted segments and distributing them across different cloud storage providers, ByteScatter creates a security paradigm where no single breach can compromise the entire file. This documentation provides a comprehensive overview of the system's architecture, implementation details, development challenges, and security considerations.
+ByteScatter is an advanced anti-tamper file security solution that enhances data protection through a combination of strong encryption and multi-cloud distribution. By splitting files into encrypted segments and distributing them across different cloud storage providers, ByteScatter creates a security paradigm where no single breach can compromise the entire file. This documentation provides a comprehensive overview of the system's architecture, implementation details, development challenges, and security considerations.
 # 1. Core Concept and Design Philosophy
 ByteScatter addresses a fundamental and relevant problem in cloud storage security: how to leverage the convenience of cloud storage while mitigating the risk of unauthorized access. With this rapid change of AI training ethics and privacy laws (such as the EU cracking down on Apple), we figure this is more relevant than ever. Traditional approaches rely solely on encryption, which creates a single point of failure if the encryption key is compromised. ByteScatter takes a different approach by implementing a "divide and conquer" strategy:
 Files are split into multiple segments
