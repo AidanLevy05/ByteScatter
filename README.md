@@ -1,6 +1,6 @@
 # HenHacks2025LKAD
 
-ByteScatter: Secure Multi-Cloud File Distribution System
+ByteScatter: Secure File Obfuscation and Distribution System
 ---
 # Executive Summary
 
